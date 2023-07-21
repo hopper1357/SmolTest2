@@ -1,4 +1,3 @@
-```csharp
 using System;
 
 namespace DungeonCrawler
@@ -7,31 +6,37 @@ namespace DungeonCrawler
     {
         public Rogue(string name, int level) : base(name, level)
         {
-            // Set initial stats for the Rogue class
-            Attack = 10;
-            Defense = 5;
-            MaxHealth = 50;
+            // Initialize Rogue-specific properties and abilities here
+            // For example, set the starting equipment for the Rogue
+            Equipment = new Equipment(EquipmentType.Rope, EquipmentType.LockPicks, EquipmentType.LightArmor, EquipmentType.HandWeapon);
+            // Set starting health for the Rogue
+            MaxHealth = 3 + level;
             CurrentHealth = MaxHealth;
-            Experience = 0;
         }
 
         public override void LevelUp()
         {
             base.LevelUp();
-
-            // Increase stats for the Rogue class upon leveling up
-            Attack += 2;
-            Defense += 1;
-            MaxHealth += 10;
-            CurrentHealth = MaxHealth;
+            // Implement Rogue-specific level up logic here
+            // For example, increase the Rogue's life points by 3 for each level-up
+            MaxHealth += 3;
         }
 
-        public override void PerformSpecialAbility()
+        public override void PerformAction()
         {
-            // Implement special ability for the Rogue class
-            Console.WriteLine("Performing special ability: Stealth");
-            // Code for the special ability goes here
+            // Implement Rogue's action logic here
+            // For example, the Rogue can perform different actions based on the game mechanics
+
+            // In this example, let's assume the Rogue performs the "Attack" action
+            // You will need to provide the target character for the attack.
+            // For now, let's assume a target named "Enemy" for demonstration purposes.
+            Character target = new Character("Enemy", 1, 0, 5, 5, 3); // Replace this with an actual target instance.
+            
+            // Create an instance of the AttackAction class
+            AttackAction attackAction = new AttackAction();
+            attackAction.Execute(this, target);
         }
+
+        // Additional methods specific to the Rogue can be implemented here.
     }
 }
-```
