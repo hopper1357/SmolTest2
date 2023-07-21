@@ -1,0 +1,37 @@
+Shared dependencies between the generated files:
+
+1. Game.cs: None
+2. Player.cs: None
+3. Character.cs: None
+4. Fighter.cs: None
+5. Rogue.cs: None
+6. Wizard.cs: None
+7. Cleric.cs: None
+8. Stats.cs: None
+9. Equipment.cs: None
+10. Weapon.cs: None
+11. Armor.cs: None
+12. Shield.cs: None
+13. MiscGear.cs: None
+14. Actions.cs: None
+15. MoveAction.cs: None
+16. AttackAction.cs: None
+17. UseItemAction.cs: None
+18. EquipUnequipAction.cs: None
+19. CastSpellAction.cs: None
+20. CombatSystem.cs: None
+21. Turn.cs: None
+22. Position.cs: None
+23. Effects.cs: None
+24. PoisonEffect.cs: None
+25. FearEffect.cs: None
+26. ParalysisEffect.cs: None
+27. DungeonGenerator.cs: None
+28. Room.cs: None
+29. Corridor.cs: None
+30. MonsterSpawner.cs: None
+31. EncounterTable.cs: None
+32. LootTable.cs: None
+33. SpellList.cs: None
+34. TrapEffects.cs: None
+35. RandomEvent.cs: None
